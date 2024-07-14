@@ -279,7 +279,7 @@ def plot_bbox_and_label(csv_file, datapoint_index, pred_boxes, target_boxes):
     """
     fig, ax = plt.subplots(1, 2, figsize=(15, 30)) # 1 row, 2 columns
     fname_dataframe = pd.read_csv("data/" + csv_file) # dataframe with our filenames
-    image_fname = "data/images/" + fname_dataframe.iloc[datapoint_index, 0]
+    image_fname = "data/matthew_imgs/" + fname_dataframe.iloc[datapoint_index, 0]
 
     # plot the images
     image_numpy = cv2.imread(image_fname)[...,::-1]
