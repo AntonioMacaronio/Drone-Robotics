@@ -1,5 +1,4 @@
-classes	= 2
-train  	= /home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/train.txt
-valid  	= /home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/test.txt
-names 	= /home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/tello.names
-backup 	= /home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/backup/
+classes	= 1
+train  	= /Users/matth/Desktop/Drone-Robotics/darknet/training/tello/train.txt
+valid  	= /Users/matth/Desktop/Drone-Robotics/darknet/training/tello/test.txt
+names 	= /Users/matth/Desktop/Drone-Robotics/darknet/training/tello/tello.names.txt

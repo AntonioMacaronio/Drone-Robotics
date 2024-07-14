@@ -1,6 +1,8 @@
-/home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/dataset/001.jpg
-/home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/dataset/002.jpg
-/home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/dataset/003.jpg
-/home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/dataset/004.jpg
-/home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/dataset/005.jpg
-/home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/dataset/006.jpg
+/Users/matth/Desktop/Drone-Robotics/data/matthew_imgs/IMG_1625.jpg
+/Users/matth/Desktop/Drone-Robotics/data/matthew_imgs/IMG_1626.jpg
+/Users/matth/Desktop/Drone-Robotics/data/matthew_imgs/IMG_1627.jpg
+/Users/matth/Desktop/Drone-Robotics/data/matthew_imgs/IMG_1628.jpg
+/Users/matth/Desktop/Drone-Robotics/data/matthew_imgs/IMG_1629.jpg
+/Users/matth/Desktop/Drone-Robotics/data/matthew_imgs/IMG_1630.jpg
+/Users/matth/Desktop/Drone-Robotics/data/matthew_imgs/IMG_1631.jpg
+/Users/matth/Desktop/Drone-Robotics/data/matthew_imgs/IMG_1632.jpg
