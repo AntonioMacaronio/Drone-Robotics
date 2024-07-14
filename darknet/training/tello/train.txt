@@ -1,0 +1,6 @@
+/home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/dataset/001.jpg
+/home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/dataset/002.jpg
+/home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/dataset/003.jpg
+/home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/dataset/004.jpg
+/home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/dataset/005.jpg
+/home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/dataset/006.jpg

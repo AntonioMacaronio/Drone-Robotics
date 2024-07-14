@@ -1,0 +1,172 @@
+{
+    "wp": [
+        {
+            "dist_cm": 622,
+            "dist_px": 121,
+            "angle_deg": 161
+        },
+        {
+            "dist_cm": 879,
+            "dist_px": 171,
+            "angle_deg": 48
+        },
+        {
+            "dist_cm": 1378,
+            "dist_px": 268,
+            "angle_deg": 57
+        },
+        {
+            "dist_cm": 1006,
+            "dist_px": 195,
+            "angle_deg": 96
+        },
+        {
+            "dist_cm": 982,
+            "dist_px": 191,
+            "angle_deg": 97
+        },
+        {
+            "dist_cm": 716,
+            "dist_px": 139,
+            "angle_deg": 84
+        },
+        {
+            "dist_cm": 1167,
+            "dist_px": 227,
+            "angle_deg": 99
+        },
+        {
+            "dist_cm": 2371,
+            "dist_px": 461,
+            "angle_deg": 39
+        },
+        {
+            "dist_cm": 1136,
+            "dist_px": 221,
+            "angle_deg": 52
+        },
+        {
+            "dist_cm": 2386,
+            "dist_px": 464,
+            "angle_deg": 35
+        },
+        {
+            "dist_cm": 1147,
+            "dist_px": 223,
+            "angle_deg": 90
+        },
+        {
+            "dist_cm": 920,
+            "dist_px": 179,
+            "angle_deg": 118
+        },
+        {
+            "dist_cm": 331,
+            "dist_px": 64,
+            "angle_deg": 73
+        },
+        {
+            "dist_cm": 371,
+            "dist_px": 72,
+            "angle_deg": 174
+        },
+        {
+            "dist_cm": 154,
+            "dist_px": 30,
+            "angle_deg": 168
+        },
+        {
+            "dist_cm": 916,
+            "dist_px": 178,
+            "angle_deg": 52
+        },
+        {
+            "dist_cm": 665,
+            "dist_px": 129,
+            "angle_deg": 110
+        },
+        {
+            "dist_cm": 1041,
+            "dist_px": 202,
+            "angle_deg": 111
+        }
+    ],
+    "pos": [
+        [
+            374,
+            202
+        ],
+        [
+            412,
+            317
+        ],
+        [
+            498,
+            169
+        ],
+        [
+            230,
+            178
+        ],
+        [
+            213,
+            373
+        ],
+        [
+            400,
+            413
+        ],
+        [
+            358,
+            546
+        ],
+        [
+            133,
+            515
+        ],
+        [
+            527,
+            275
+        ],
+        [
+            504,
+            495
+        ],
+        [
+            277,
+            90
+        ],
+        [
+            81,
+            197
+        ],
+        [
+            80,
+            376
+        ],
+        [
+            142,
+            358
+        ],
+        [
+            213,
+            344
+        ],
+        [
+            243,
+            344
+        ],
+        [
+            135,
+            486
+        ],
+        [
+            205,
+            595
+        ],
+        [
+            404,
+            557
+        ]
+    ]
+}

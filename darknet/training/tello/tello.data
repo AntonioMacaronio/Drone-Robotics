@@ -1,0 +1,5 @@
+classes	= 2
+train  	= /home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/train.txt
+valid  	= /home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/test.txt
+names 	= /home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/training/tello/tello.names
+backup 	= /home/mbazli/Documents/youtube/tello-ai/code/tello-ai-yolo/darknet/backup/
