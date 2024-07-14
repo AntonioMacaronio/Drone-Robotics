@@ -6,6 +6,7 @@ from djitellopy import Tello
 import cv2, math, time
 import os
 import numpy as np
+import torch
 
 MAP_SIZE_COEFF = 5.14
 CENTER_X = 128 # screen is 256x256
@@ -34,6 +35,8 @@ def move_towards_center(bbox_center_x, bbox_center_y):
             tello.move_up(20)
 
 if __name__ == '__main__':
+    tar_file_path = "yolo_resnet_pretrained.tar"
+    model = torch.load(tar_file_path)
     tello = Tello()
     tello.connect()
     tello.streamon()
@@ -45,11 +48,8 @@ if __name__ == '__main__':
             img = tello.get_frame_read().frame # np array
 
             # Generate bounding boxes from YOLO
-            bounding_boxes = [
-                (50, 50, 200, 150),
-                (300, 200, 100, 100)
-            ]
-
+            bounding_boxes = (50, 50, 200, 150)
+            
             bbox_center_x = []
             bbox_center_y = []
 
