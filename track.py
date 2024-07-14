@@ -1,5 +1,4 @@
 #!/usr/bin/python
-import pygame
 import json
 import math
 from threading import Thread
@@ -45,24 +44,25 @@ if __name__ == '__main__':
         while True:
             img = tello.get_frame_read().frame # np array
 
-
             # Generate bounding boxes from YOLO
             bounding_boxes = [
                 (50, 50, 200, 150),
                 (300, 200, 100, 100)
             ]
 
+            bbox_center_x = []
+            bbox_center_y = []
+
             for (x, y, w, h) in bounding_boxes:
+                bbox_center_x.append(x + w // 2)
+                bbox_center_y.append(y + h // 2)
                 cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
             
-            bbox_center_x = x + w // 2
-            bbox_center_y = y + h // 2
-
-            cv2.circle(img, (bbox_center_x, bbox_center_y), 5, (0, 0, 255), -1)
-
-            cv2.imshow('frame', img)
-
-            move_towards_center(bbox_center_x, bbox_center_y)
+            cv2.imshow('frame', img)            
+            for x, y in zip(bbox_center_x, bbox_center_y):
+                cv2.circle(img, (x,y), 5, (0, 0, 255), -1)
+                move_towards_center(x, y)
+                cv2.imshow('frame', img)            
 
             # TODO: generate path waypoints to add inputs for tello
                 # integrate model + get annotations for faces
