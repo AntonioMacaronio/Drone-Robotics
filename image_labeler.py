@@ -51,14 +51,17 @@ class ImageLabelingTool:
     def on_release(self, event):
         end_x = self.canvas.canvasx(event.x)
         end_y = self.canvas.canvasy(event.y)
-        self.labels.append({
-            'x1': min(self.start_x, end_x) / 480.0,
-            'y1': min(self.start_y, end_y) / 640.0,
-            'x2': max(self.start_x, end_x) / 480.0,
-            'y2': max(self.start_y, end_y) / 640.0,
-        })
+        points = {
+            'x1': min(self.start_x, end_x),
+            'y1': min(self.start_y, end_y),
+            'x2': max(self.start_x, end_x),
+            'y2': max(self.start_y, end_y),
+        }
+        self.labels.append(points)
         print(f"Bounding box added: {self.labels[-1]}")
-        print(min(self.start_x, end_x) / 480.0, min(self.start_y, end_y) / 640.0, max(self.start_x, end_x) / 480.0, max(self.start_y, end_y) / 640.0)
+        # print(min(self.start_x, end_x) / 480.0, min(self.start_y, end_y) / 640.0, max(self.start_x, end_x) / 480.0, max(self.start_y, end_y) / 640.0)
+        print((points['x1'] + points['x2']) / 960.0, (points['y1'] + points['y2']) / 1280.0, (points['x2'] - points['x1']) / 480.0, (points['y2'] - points['y1']) / 640.0)
+
 
     def save_labels(self):
         file_path = filedialog.asksaveasfilename(defaultextension=".json")
