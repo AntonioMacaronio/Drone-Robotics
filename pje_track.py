@@ -151,7 +151,7 @@ def main():
             # Add a point if it's confidence is higher than threshold.
             points.append((int(x), int(y)) if conf > args.thr else None)
 
-        print("points: ", points)
+        # print("points: ", points)
         for pair in POSE_PAIRS:
             partFrom = pair[0]
             # print("Partfrom:", partFrom)
@@ -179,20 +179,33 @@ def main():
             # detection = getDetectedPerson(detections, detection)
             if points[0] != None:
                 noseX, noseY = points[0][0], points[0][1]
+                try:
+                    neckX, neckY = points[1][0], points[1][1]
+                except:
+                    neckX, neckY = 100000, 100000
                 color = (0, 255, 0)
                 # np_img = cv2.rectangle(np_img, (int(detection.Left), int(
                 #     detection.Top)), (int(detection.Right), int(detection.Bottom)), color, 2)
                 # np_img = cv2.circle(np_img, (int(detection.Center[0]), int(
                 #     detection.Center[1])), 5, color, 5, cv2.LINE_AA)
                 detectX = int(noseX)
+                detectY = int(noseY)
                 centerX = w / 2
+                centerY = h / 2
                 yaw_velocity = int((detectX - centerX) /
                                    7)  # proportional only
-                up_down_velocity = int((30 - noseY) / 2)
-                forward_backward_velocity = int(
-                    (h - noseY - 30) / 2)
+                up_down_velocity = int((detectY - centerY) / 2)
+                # forward_backward_velocity = int(
+                #     (h - noseY - 30) / 2)
+                print("eye diff: ", neckY - noseY)
+                if abs(noseY - neckY) >= 100 and abs(noseY - neckY) <= 150:
+                    forward_backward_velocity = 0
+                elif abs(noseY - neckY) > 150:
+                    forward_backward_velocity = -25
+                else:
+                    forward_backward_velocity = 25
                 yaw_velocity = limitVelocity(yaw_velocity, max_yaw_velocity)
-                up_down_velocity = limitVelocity(
+                up_down_velocity = -limitVelocity(
                     up_down_velocity, max_up_down_velocity)
                 forward_backward_velocity = limitVelocity(
                     forward_backward_velocity, max_forward_backward_velocity)
